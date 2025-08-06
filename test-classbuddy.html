@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassBuddy Guide Panel - Test ClassBuddy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="guide-panel">
+
+
+            <!-- Main Dropdown under the heading -->
+            <div class="main-dropdown">
+                <div class="dropdown-trigger" onclick="toggleDropdown()">
+                    <div class="dropdown-trigger-content">
+                        <i class="fas fa-flask"></i>
+                        <span>Test ClassBuddy</span>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="test-classbuddy.html" class="dropdown-item active">
+                        <i class="fas fa-flask"></i>
+                        Test ClassBuddy
+                    </a>
+                    <a href="create-agentic-ai.html" class="dropdown-item">
+                        <i class="fas fa-robot"></i>
+                        Create Agentic AI
+                    </a>
+                    <a href="index.html" class="dropdown-item">
+                        <i class="fas fa-wrench"></i>
+                        ServiceNow Ticket
+                    </a>
+                    <a href="github-repository.html" class="dropdown-item">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                    <a href="distribution-list.html" class="dropdown-item">
+                        <i class="fas fa-users"></i>
+                        Distribution List
+                    </a>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="section" style="border-bottom: none; text-align: center;">
+                <h2 class="section-title" style="text-align: center; display: flex; justify-content: center;">Step 1: Test ClassBuddy</h2>
+                <div>
+                    <p>Now it's your turn to interact with the Virtual TA and see how it responds across different areas of student life.</p>
+                </div>
+            </div>
+
+            <!-- Try It Out Section -->
+            <div class="section" style="text-align: center;">
+                <h2 class="section-title" style="text-align: center; display: flex; justify-content: center;">
+                    Try It Out
+                </h2>
+                <div>
+                    <p>Ask one question from each of the categories below.</p>
+                    <p>You can either:</p>
+                    <ul style="text-align: left; display: inline-block;">
+                        <li>Copy and paste a sample question from the list below, or</li>
+                        <li>Come up with your own question related to that category.</li>
+                    </ul>
+                    <p style="margin-top: 20px;">Take a moment to explore how the Virtual TA handles different types of student inquiries!</p>
+                    <div class="quote-box">
+                        <em>Select the Honors Chemistry Course!</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assignment Help Card -->
+            <div class="section" style="text-align: center;">
+                <div style="background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 3px solid #dc3545; position: relative;">
+                    <!-- Header -->
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <div style="color: #dc3545; font-size: 14px; font-weight: 600; margin-bottom: 8px;">ASSIGNMENT</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #212529; margin-bottom: 8px;">A. Assignment Help</div>
+                        <div style="color: #6c757d; margin-bottom: 16px;">Ask about something you are stuck on in an assignment.</div>
+                        <div style="color: #6c757d; font-size: 14px; margin-bottom: 16px;">Sample prompts:</div>
+                    </div>
+
+                    <!-- Sample Prompts -->
+                    <div style="text-align: left;">
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">Can you create me a timeline to help me with this project due in 3 days?</div>
+                            <button onclick="copyToClipboard('Can you create me a timeline to help me with this project due in 3 days?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">Can you explain this to me in sports terms?</div>
+                            <button onclick="copyToClipboard('Can you explain this to me in sports terms?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">Can you explain how to complete this assignment in simple terms?</div>
+                            <button onclick="copyToClipboard('Can you explain how to complete this assignment in simple terms?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">What formula or method should I use to complete this question?</div>
+                            <button onclick="copyToClipboard('What formula or method should I use to complete this question?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Guidance Note -->
+                    <div style="text-align: left; color: #212529; font-size: 14px;">
+                        Look for: Guidance, structure, or coaching questions—not a finished answer.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Content Card -->
+            <div class="section" style="text-align: center;">
+                <div style="background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 3px solid #007bff; position: relative;">
+                    <!-- Header -->
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <div style="color: #007bff; font-size: 14px; font-weight: 600; margin-bottom: 8px;">COURSE CONTENT</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #212529; margin-bottom: 8px;">B. Course Content Questions</div>
+                        <div style="color: #6c757d; margin-bottom: 16px;">Ask about the course material, syllabus, or what you missed.</div>
+                        <div style="color: #6c757d; font-size: 14px; margin-bottom: 16px;">Sample prompts:</div>
+                    </div>
+
+                    <!-- Sample Prompts -->
+                    <div style="text-align: left;">
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Has my teacher announced any extra credit opportunities recently?"</div>
+                            <button onclick="copyToClipboard('Has my teacher announced any extra credit opportunities recently?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Can you summarize today's key points in a few bullet points?"</div>
+                            <button onclick="copyToClipboard('Can you summarize today's key points in a few bullet points?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"What are the key takeaways from the week 3 reading?"</div>
+                            <button onclick="copyToClipboard('What are the key takeaways from the week 3 reading?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"I was absent on 9/7, what did I miss?"</div>
+                            <button onclick="copyToClipboard('I was absent on 9/7, what did I miss?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Guidance Note -->
+                    <div style="text-align: left; color: #212529; font-size: 14px;">
+                        Look for: Questions about course logistics, content, or missed material.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Help Card -->
+            <div class="section" style="text-align: center;">
+                <div style="background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 3px solid #28a745; position: relative;">
+                    <!-- Header -->
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <div style="color: #28a745; font-size: 14px; font-weight: 600; margin-bottom: 8px;">QUIZ HELP</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #212529; margin-bottom: 8px;">C. Quiz Help</div>
+                        <div style="color: #6c757d; margin-bottom: 16px;">Ask for help preparing for or reviewing a quiz.</div>
+                        <div style="color: #6c757d; font-size: 14px; margin-bottom: 16px;">Sample prompts:</div>
+                    </div>
+
+                    <!-- Sample Prompts -->
+                    <div style="text-align: left;">
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Make me a checklist of what I should understand before taking the quiz."</div>
+                            <button onclick="copyToClipboard('Make me a checklist of what I should understand before taking the quiz.')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Can you help me reflect on what I got wrong and why?"</div>
+                            <button onclick="copyToClipboard('Can you help me reflect on what I got wrong and why?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Can you give me a list of formulas or terms I need to memorize?"</div>
+                            <button onclick="copyToClipboard('Can you give me a list of formulas or terms I need to memorize?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Can you generate a study guide based on this week's content?"</div>
+                            <button onclick="copyToClipboard('Can you generate a study guide based on this week&apos;s content?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"What are some high-priority topics that usually show up on quizzes?"</div>
+                            <button onclick="copyToClipboard('What are some high-priority topics that usually show up on quizzes?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Guidance Note -->
+                    <div style="text-align: left; color: #212529; font-size: 14px;">
+                        Look for: Study strategies, review, and preparation—not direct answers.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guardrails Card -->
+            <div class="section" style="text-align: center;">
+                <div style="background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 3px solid #dc3545; position: relative;">
+                    <!-- Header -->
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <div style="color: #dc3545; font-size: 14px; font-weight: 600; margin-bottom: 8px;">GUARDRAILS</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #212529; margin-bottom: 8px;">D. Guardrails (Things Classbuddy Won't Do)</div>
+                        <div style="color: #6c757d; margin-bottom: 16px;">Classbuddy will not do your work for you or provide direct answers.</div>
+                        <div style="color: #6c757d; font-size: 14px; margin-bottom: 16px;">Sample prompts:</div>
+                    </div>
+
+                    <!-- Sample Prompts -->
+                    <div style="text-align: left;">
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Can you just give me the correct answers for my quiz?"</div>
+                            <button onclick="copyToClipboard('Can you just give me the correct answers for my quiz?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"Can you complete this assignment for me and give me the final result?"</div>
+                            <button onclick="copyToClipboard('Can you complete this assignment for me and give me the final result?')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Guidance Note -->
+                    <div style="text-align: left; color: #212529; font-size: 14px;">
+                        Note: Classbuddy is here to help you learn, not to do your work for you.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lecture/Video Help Card -->
+            <div class="section" style="text-align: center;">
+                <div style="background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 3px solid #6f42c1; position: relative;">
+                    <!-- Header -->
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <div style="color: #6f42c1; font-size: 14px; font-weight: 600; margin-bottom: 8px;">LECTURE/VIDEO HELP</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #212529; margin-bottom: 8px;">E. Lecture/Video Help</div>
+                        <div style="color: #6c757d; margin-bottom: 16px;">Ask about specific parts of a lecture or video.</div>
+                        <div style="color: #6c757d; font-size: 14px; margin-bottom: 16px;">Sample prompts:</div>
+                    </div>
+
+                    <!-- Sample Prompts -->
+                    <div style="text-align: left;">
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"give me the video on balancing equations"</div>
+                            <button onclick="copyToClipboard('give me the video on balancing equations')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-style: italic; color: #212529;">"how did he balance h2 o2 in the video"</div>
+                            <button onclick="copyToClipboard('how did he balance h2 o2 in the video')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                <i class="fas fa-clipboard"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Guidance Note -->
+                    <div style="text-align: left; color: #212529; font-size: 14px;">
+                        Look for: Questions about specific explanations, timestamps, or clarifications.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons" style="justify-content: flex-end;">
+                <a href="create-agentic-ai.html" class="nav-btn next-btn">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Dropdown functionality
+        function toggleDropdown() {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            dropdownTrigger.classList.toggle('active');
+            dropdownMenu.classList.toggle('active');
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            if (!e.target.closest('.main-dropdown')) {
+                dropdownTrigger.classList.remove('active');
+                dropdownMenu.classList.remove('active');
+            }
+        });
+
+        // Copy to clipboard functionality
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Optional: Show a brief success message
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i>';
+                button.style.color = '#28a745';
+                
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.style.color = '#8b4513';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html> 

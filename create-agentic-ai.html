@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassBuddy Guide Panel - Create Agentic AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="guide-panel">
+            <!-- Main Dropdown under the heading -->
+            <div class="main-dropdown">
+                <div class="dropdown-trigger" onclick="toggleDropdown()">
+                    <div class="dropdown-trigger-content">
+                        <i class="fas fa-robot"></i>
+                        <span>Create Agentic AI</span>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="test-classbuddy.html" class="dropdown-item">
+                        <i class="fas fa-flask"></i>
+                        Test ClassBuddy
+                    </a>
+                    <a href="create-agentic-ai.html" class="dropdown-item active">
+                        <i class="fas fa-robot"></i>
+                        Create Agentic AI
+                    </a>
+                    <a href="index.html" class="dropdown-item">
+                        <i class="fas fa-wrench"></i>
+                        ServiceNow Ticket
+                    </a>
+                    <a href="github-repository.html" class="dropdown-item">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                    <a href="distribution-list.html" class="dropdown-item">
+                        <i class="fas fa-users"></i>
+                        Distribution List
+                    </a>
+                </div>
+            </div>
+
+            <!-- Header and Subtext -->
+            <div class="section" style="text-align: center;">
+                <h2 class="section-title" style="text-align: center; display: flex; justify-content: center;">Create an IT Help Desk Agent to Streamline Support and Ticket Creation</h2>
+                <div>
+                    <p>Help users quickly create and track IT support tickets, reducing wait times and improving the help desk experience for everyone.</p>
+                </div>
+            </div>
+
+            <!-- Agent Creation Card -->
+            <div class="section" style="text-align: center;">
+                <div style="background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 3px solid #007bff; position: relative;">
+                    <!-- Header -->
+                    <div style="text-align: left; margin-bottom: 20px;">
+                        <div style="color: #007bff; font-size: 14px; font-weight: 600; margin-bottom: 8px;">AGENT CREATION</div>
+                        <div style="font-size: 24px; font-weight: 700; color: #212529; margin-bottom: 8px;">Create an Agentic AI Agent</div>
+                        <div style="color: #6c757d; margin-bottom: 16px;">Follow these steps to configure your IT Help Desk Agent</div>
+                    </div>
+
+                    <!-- Steps -->
+                    <div style="text-align: left;">
+                        <!-- Step 1 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 1: Agent Name</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Copy the agent name below and paste it into the 'Name this Agent' field.</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-family: monospace; color: #212529;">IT Help Desk Agent</div>
+                                <button onclick="copyToClipboard('IT Help Desk Agent')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                    <i class="fas fa-clipboard"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 2: Description</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Copy the description below and paste it into the 'Description' field.</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-family: monospace; color: #212529;">This Agent Helps Students with IT Help Desk Requests.</div>
+                                <button onclick="copyToClipboard('This Agent Helps Students with IT Help Desk Requests.')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                    <i class="fas fa-clipboard"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 3: Instructions</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Copy the instructions below and paste them into the 'Instructions' field.</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-family: monospace; color: #212529; font-size: 12px; line-height: 1.4; max-width: 90%; max-height: 60px; overflow-y: auto;">
+                                    You are a helpful, kind assistant who helps create a ticket(incident) in ServiceNow. If the user says, "Could you please create a ticket on service now?", you should ask for a description and generate a short description for this ticket. Confirm the generated short description and description with the user. After the user's confirmation, call the new_tool action and pass these two inputs. If the user provides their own description, use it exactly as given and generate a short description. Confirm the generated short description and description with the user. After user's confirmation, call the new_tool action call the n8n servicenow action and pass these two inputs. After calling the new_tool action, you should receive the ticket link as well as the ticket(incident) number. Provide the successful message, ticket link, and ticket number to the user. If you do not receive the details about the ticket link and incident number, this means an error.
+                                </div>
+                                <button onclick="copyToClipboard('You are a helpful, kind assistant who helps create a ticket(incident) in ServiceNow. If the user says, &quot;Could you please create a ticket on service now?&quot;, you should ask for a description and generate a short description for this ticket. Confirm the generated short description and description with the user. After the user confirmation, call the new_tool action and pass these two inputs. If the user provides their own description, use it exactly as given and generate a short description. Confirm the generated short description and description with the user. After user confirmation, call the new_tool action call the n8n servicenow action and pass these two inputs. After calling the new_tool action, you should receive the ticket link as well as the ticket(incident) number. Provide the successful message, ticket link, and ticket number to the user. If you do not receive the details about the ticket link and incident number, this means an error.')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                    <i class="fas fa-clipboard"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 4: Conversation Starters</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Copy the conversation starter below and paste it into the 'Conversation starters' field.</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-family: monospace; color: #212529;">I need help with my computer.</div>
+                                <button onclick="copyToClipboard('I need help with my computer.')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                    <i class="fas fa-clipboard"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 5: Category</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Set the category to 'Information Technology Service' (should be pre-selected).</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-family: monospace; color: #212529;">Information Technology Service</div>
+                                <div style="color: #6c757d;">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 6: Set Access Permissions</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">To control who can access this agent:</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                                <ol style="color: #212529; margin: 0; padding-left: 20px;">
+                                    <li style="margin-bottom: 8px;">Scroll down to the <strong>Access Permissions</strong> section</li>
+                                    <li style="margin-bottom: 8px;">You can then:
+                                        <ul style="margin: 8px 0; padding-left: 20px;">
+                                            <li style="margin-bottom: 4px;">Choose <strong>Only Me</strong> to keep the agent private</li>
+                                            <li style="margin-bottom: 4px;">Or choose <strong>Groups</strong> to share the agent with selected teams</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p style="color: #212529; margin: 8px 0 0 0; font-size: 14px;"><strong>To share with groups:</strong></p>
+                                <ul style="color: #212529; margin: 8px 0; padding-left: 20px;">
+                                    <li style="margin-bottom: 4px;">Select one or more from the <strong>Group Information</strong> table</li>
+                                    <li style="margin-bottom: 4px;">Click <strong>Attach</strong> to add them</li>
+                                    <li style="margin-bottom: 4px;">They'll show up in the <strong>Attached Group List</strong></li>
+                                </ul>
+                                <p style="color: #6c757d; margin: 8px 0 0 0; font-size: 14px;">You can also detach groups later using <strong>Remove Attached Group</strong>.</p>
+                                <p style="color: #212529; margin: 8px 0 0 0; font-size: 14px;">This gives you control over visibility and access within your organization.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 7 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 7: Click Continue</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Click <strong>Continue</strong> to configure your agent's action (this opens the <em>Add Action</em> modal).</p>
+                        </div>
+
+                        <!-- Step 8 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 8: Create an Action</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Follow these steps in the Add Action modal:</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px;">
+                                <ul style="color: #212529; margin: 0; padding-left: 20px;">
+                                    <li style="margin-bottom: 4px;">Click <strong>Add Action</strong> to open the <em>Add Action</em> modal</li>
+                                    <li style="margin-bottom: 4px;">Provide a name for your action (e.g., create_ticket)</li>
+                                    <li style="margin-bottom: 4px;">Click <strong>Format JSON</strong> to validate</li>
+                                    <li style="margin-bottom: 4px;">Click <strong>Create</strong> to create the action</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 9 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 9: Action Name</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Copy the action name below and paste it into the action name field in the modal.</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-family: monospace; color: #212529;">ServiceNow Ticket Creation</div>
+                                <button onclick="copyToClipboard('ServiceNow Ticket Creation')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                    <i class="fas fa-clipboard"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 10 -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px;">Step 10: OpenAPI JSON Configuration</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">Copy the OpenAPI JSON configuration below and paste it into the schema field in the modal.</p>
+                            <div style="background: #f8f9fa; border-radius: 8px; padding: 12px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+                                <div style="font-family: monospace; color: #212529; font-size: 12px; line-height: 1.4; max-width: 90%; max-height: 120px; overflow-y: auto;">
+                                    {<br>
+&nbsp;&nbsp;"openapi": "3.0.0",<br>
+&nbsp;&nbsp;"info": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"title": "ServiceNow Ticket Creation",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"version": "1.0.0",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"description": "Create tickets in ServiceNow via n8n workflow"<br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;"servers": [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url": "https://your-n8n-instance.com/webhook/service-now-ticket",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "n8n webhook endpoint"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;],<br>
+&nbsp;&nbsp;"paths": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"/create-ticket": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"post": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"summary": "Create a new ServiceNow ticket",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"requestBody": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"required": true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"content": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"application/json": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"schema": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "object",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"properties": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"short_description": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "string",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Short description of the ticket"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "string",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Detailed description of the issue"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"required": ["short_description", "description"]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;"components": {}<br>
+}
+                                </div>
+                                <button onclick="copyToClipboard('{\&quot;openapi\&quot;: \&quot;3.0.0\&quot;, \&quot;info\&quot;: {\&quot;title\&quot;: \&quot;ServiceNow Ticket Creation\&quot;, \&quot;version\&quot;: \&quot;1.0.0\&quot;, \&quot;description\&quot;: \&quot;Create tickets in ServiceNow via n8n workflow\&quot;}, \&quot;servers\&quot;: [{\&quot;url\&quot;: \&quot;https://your-n8n-instance.com/webhook/service-now-ticket\&quot;, \&quot;description\&quot;: \&quot;n8n webhook endpoint\&quot;}], \&quot;paths\&quot;: {\&quot;/create-ticket\&quot;: {\&quot;post\&quot;: {\&quot;summary\&quot;: \&quot;Create a new ServiceNow ticket\&quot;, \&quot;requestBody\&quot;: {\&quot;required\&quot;: true, \&quot;content\&quot;: {\&quot;application/json\&quot;: {\&quot;schema\&quot;: {\&quot;type\&quot;: \&quot;object\&quot;, \&quot;properties\&quot;: {\&quot;short_description\&quot;: {\&quot;type\&quot;: \&quot;string\&quot;, \&quot;description\&quot;: \&quot;Short description of the ticket\&quot;}, \&quot;description\&quot;: {\&quot;type\&quot;: \&quot;string\&quot;, \&quot;description\&quot;: \&quot;Detailed description of the issue\&quot;}}, \&quot;required\&quot;: [\&quot;short_description\&quot;, \&quot;description\&quot;]}}}}}}, \&quot;components\&quot;: {}}')" style="background: none; border: none; color: #8b4513; cursor: pointer; padding: 4px;">
+                                    <i class="fas fa-clipboard"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- n8n Workflow Diagram -->
+                        <div style="margin-bottom: 20px;">
+                            <h3 style="color: #212529; font-size: 18px; margin-bottom: 8px; text-align: center;">n8n Workflow Diagram</h3>
+                            <p style="color: #6c757d; margin-bottom: 8px;">The JSON configuration above is calling this workflow.</p>
+                            <div style="text-align: center; margin-bottom: 20px;">
+                                <img src="workflow-cropped.png" alt="n8n Workflow Diagram showing Webhook, AI Agent, OpenAI Chat Model, Create incident, and Respond to Webhook nodes connected with data flow arrows" style="max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="test-classbuddy.html" class="nav-btn back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Previous
+                </a>
+                <a href="index.html" class="nav-btn next-btn">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Dropdown functionality
+        function toggleDropdown() {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            dropdownTrigger.classList.toggle('active');
+            dropdownMenu.classList.toggle('active');
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            if (!e.target.closest('.main-dropdown')) {
+                dropdownTrigger.classList.remove('active');
+                dropdownMenu.classList.remove('active');
+            }
+        });
+
+        // Copy to clipboard functionality
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Optional: Show a brief success message
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i>';
+                button.style.color = '#28a745';
+                
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.style.color = '#8b4513';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html> 

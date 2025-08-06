@@ -22,6 +22,14 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="test-classbuddy.html" class="dropdown-item">
+                        <i class="fas fa-flask"></i>
+                        Test ClassBuddy
+                    </a>
+                    <a href="create-agentic-ai.html" class="dropdown-item">
+                        <i class="fas fa-robot"></i>
+                        Create Agentic AI
+                    </a>
                     <a href="index.html" class="dropdown-item">
                         <i class="fas fa-wrench"></i>
                         ServiceNow Ticket
@@ -41,8 +49,8 @@
             <div class="section">
                 <h2 class="section-title">The Scenario</h2>
                 <div class="scenario-card">
-                    <p>An instructor is preparing a special assignment for the Psychology course PSYCH 3012 and needs a dedicated distribution list to manage student responses for a case study.</p>
-                    <p>Previously, the instructor had to submit a manual IT request, provide group details over email, and wait for IT staff to log into the email system to configure the list.</p>
+                    <p>The IT help desk receives a request to create a distribution list for a special assignment in PSYCH 3012.</p>
+                    <p>Previously, instructors submitted requests via email, manually shared group details, and waited for IT staff to log into the email system and configure the list. This process was slow and required unnecessary back-and-forth.</p>
                 </div>
             </div>
 
@@ -58,20 +66,21 @@
                     <div class="step-card">
                         <div class="step-header">
                             <i class="fas fa-user"></i>
-                            <h3>Step 1 – Initiate the Request</h3>
+                            <h3>Step 1 – Intake the Request</h3>
                         </div>
                         <div class="step-content">
-                            <p>The instructor tells ClassBuddy:</p>
+                            <p>An instructor submits the distribution list request through ClassBuddy:</p>
                             <div class="quote-box">
                                 <em>"I need a distribution list for a special assignment in PSYCH 3012."</em>
                             </div>
-                            <p>ClassBuddy asks a few clarifying questions and creates a ServiceNow ticket with the appropriate metadata:</p>
+                            <p>ClassBuddy collects all required metadata and creates a ServiceNow ticket automatically:</p>
                             <ul>
                                 <li>Purpose: Survey distribution for PSYCH 3012</li>
                                 <li>Request Type: Distribution list</li>
                                 <li>Department: Psychology</li>
                                 <li>Urgency and due date</li>
                             </ul>
+                            <p>The IT team sees a fully detailed request without needing to follow up for missing information.</p>
                         </div>
                     </div>
 
@@ -84,13 +93,23 @@
                         <div class="step-content">
                             <p>ClassBuddy prompts:</p>
                             <div class="quote-box">
-                                <em>"What would you like to name the distribution group?"</em>
+                                <em>"To create a DL, I'll need the following info:</em><br>
+                                <em>DL Name (required)</em><br>
+                                <em>Public or Private? (required)</em><br>
+                                <em>DL email alias (must be unique) (required)</em><br>
+                                <em>Description (optional — you can leave it blank)"</em>
                             </div>
                             <p>The instructor replies:</p>
-                            <div class="quote-box">
-                                <em>"PSYCH3012_survey_test"</em>
+                            <div class="quote-box" style="position: relative;">
+                                <em>"distribution group: psych_study_202506_mable</em><br>
+                                <em>visibility: public</em><br>
+                                <em>email alias: ai_use_survey</em><br>
+                                <em>description: ai distribution group to capture survey results"</em>
+                                <button onclick="copyToClipboard('distribution group: psych_study_202506_mable\nvisibility: public\nemail alias: ai_use_survey\ndescription: ai distribution group to capture survey results')" style="position: absolute; top: 8px; right: 8px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 4px 8px; font-size: 12px; cursor: pointer; color: #6c757d;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
                             </div>
-                            <p>ClassBuddy records the group name and any member criteria, then passes this to the automated provisioning workflow.</p>
+                            <p>ClassBuddy records the group name and membership rules, then allows the IT team to review and create the group directly within ClassBuddy or approve automated provisioning.</p>
                         </div>
                     </div>
 
@@ -101,11 +120,15 @@
                             <h3>Step 3 – Retrieve Survey Data</h3>
                         </div>
                         <div class="step-content">
-                            <p>Once the distribution list is created and used for outreach, the instructor can return and ask:</p>
+                            <p>Once the list is active and survey responses are collected, the instructor follows up:</p>
                             <div class="quote-box">
                                 <em>"Show me the current survey results."</em>
                             </div>
-                            <p>ClassBuddy connects to the linked survey platform and returns a visual summary or a direct link to results.</p>
+                            <p>ClassBuddy connects to the integrated survey platform and returns:</p>
+                            <ul>
+                                <li>A direct link to detailed results</li>
+                            </ul>
+                            <p>IT no longer needs to manually generate exports or reports.</p>
                         </div>
                     </div>
                 </div>
@@ -218,6 +241,24 @@
                 dropdownMenu.classList.remove('active');
             }
         });
+
+        // Copy to clipboard functionality
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Optional: Show a brief success message
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                button.style.color = '#28a745';
+                
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.style.color = '#6c757d';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
     </script>
 </body>
 </html> 

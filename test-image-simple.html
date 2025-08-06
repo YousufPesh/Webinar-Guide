@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+</head>
+<body>
+    <h1>Testing Image Loading</h1>
+    
+    <h2>Test 1: Direct filename</h2>
+    <img src="Screenshot 2025-08-06 at 5.20.10 PM.png" alt="Test 1" style="max-width: 300px; border: 1px solid red;">
+    
+    <h2>Test 2: URL encoded</h2>
+    <img src="Screenshot%202025-08-06%20at%205.20.10%20PM.png" alt="Test 2" style="max-width: 300px; border: 1px solid blue;">
+    
+    <h2>Test 3: With ./ prefix</h2>
+    <img src="./Screenshot 2025-08-06 at 5.20.10 PM.png" alt="Test 3" style="max-width: 300px; border: 1px solid green;">
+    
+    <h2>Test 4: With ../ prefix</h2>
+    <img src="../Screenshot 2025-08-06 at 5.20.10 PM.png" alt="Test 4" style="max-width: 300px; border: 1px solid purple;">
+    
+    <p>If you see red borders with no images, the file path is wrong.</p>
+    <p>If you see images, the path is correct.</p>
+</body>
+</html> 
