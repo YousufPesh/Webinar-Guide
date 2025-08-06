@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassBuddy Guide Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="guide-panel">
+
+
+            <!-- Main Dropdown under the heading -->
+            <div class="main-dropdown">
+                <div class="dropdown-trigger" onclick="toggleDropdown()">
+                    <div class="dropdown-trigger-content">
+                        <i class="fas fa-wrench"></i>
+                        <span>ServiceNow Ticket</span>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="index.html" class="dropdown-item active">
+                        <i class="fas fa-wrench"></i>
+                        ServiceNow Ticket
+                    </a>
+                    <a href="github-repository.html" class="dropdown-item">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                    <a href="distribution-list.html" class="dropdown-item">
+                        <i class="fas fa-users"></i>
+                        Distribution List
+                    </a>
+                </div>
+            </div>
+
+            <!-- The Scenario Section -->
+            <div class="section">
+                <h2 class="section-title">The Scenario</h2>
+                <div class="scenario-card">
+                    <p>A student reports unreliable Wi-Fi.</p>
+                    <p>The technician needs to investigate, troubleshoot, and escalate if needed.</p>
+                    <p>ClassBuddy collaborates with ServiceNow to streamline this process.</p>
+                </div>
+            </div>
+
+            <!-- How ClassBuddy Responds Section -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-search"></i>
+                    How ClassBuddy Responds
+                </h2>
+                
+                <div class="steps-container">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-user"></i>
+                            <h3>Step 1 – User Reports the Issue</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>A user logs into ClassBuddy and shares:</p>
+                            <div class="quote-box">
+                                <em>"My Wi‑Fi connection keeps dropping randomly."</em>
+                            </div>
+                            <p>ClassBuddy captures the concern and begins diagnosing the issue.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Step 2 – ClassBuddy Assists with Troubleshooting</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>ClassBuddy works alongside the user, using internal support documentation and trusted web sources.</p>
+                            <p><i class="fas fa-arrow-right" style="color: #6c757d; margin-right: 8px;"></i>If the issue remains unresolved, ClassBuddy offers to escalate the case.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-arrow-up"></i>
+                            <h3>Step 3 – Escalation and Ticket Drafting</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>The user chooses to escalate:</p>
+                            <div class="quote-box">
+                                <em>"Yes, please escalate this to the help desk."</em>
+                            </div>
+                            <p>ClassBuddy gathers required details and begins preparing a ServiceNow ticket, including:</p>
+                            <ul>
+                                <li>User's name and contact</li>
+                                <li>Location and device info</li>
+                                <li>Description of the issue</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-eye"></i>
+                            <h3>Step 4 – Review & Submit</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>ClassBuddy presents a pre-filled ticket for review, containing:</p>
+                            <ul>
+                                <li>Short description</li>
+                                <li>Impact and priority</li>
+                                <li>Assignment group</li>
+                                <li>Contact information</li>
+                            </ul>
+                            <p>The user can quickly review and submit the ticket directly from within ClassBuddy.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Step 5 – Ticket Created 🎉</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>ClassBuddy finalizes the submission and confirms:</p>
+                            <div class="success-box">
+                                <strong>✅ Your incident ticket has been successfully created!</strong><br>
+                                <strong>Incident Number: INC0014295</strong><br>
+                                You can track the progress of your ticket <a href="#" class="track-link">[here]</a>.
+                            </div>
+                            <p>The user gets an immediate confirmation, and IT receives a clean, complete request ready for resolution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Ecosystem Collaboration Section -->
+            <div class="section">
+                <div class="ecosystem-header">
+                    <h2 class="section-title">System Ecosystem Collaboration</h2>
+                    <p class="ecosystem-subtitle">How ClassBuddy and ServiceNow work together to simplify IT support</p>
+                </div>
+                
+                <div class="ecosystem-grid">
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon knowledge">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>Knowledge</strong><br>
+                            Base<br>
+                            <span style="font-size: 10px; color: #6c757d;">support documents</span>
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon web-search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>Web Search</strong><br>
+                            Module
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon orchestrator">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>ClassBuddy</strong><br>
+                            AI Orchestrator
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon time-saved">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>Time Saved</strong><br>
+                            ~10 minutes per ticket
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon servicenow">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>ServiceNow</strong><br>
+                            Escalation
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons" style="justify-content: flex-end;">
+                <a href="github-repository.html" class="nav-btn next-btn">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Dropdown functionality
+        function toggleDropdown() {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            dropdownTrigger.classList.toggle('active');
+            dropdownMenu.classList.toggle('active');
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            if (!e.target.closest('.main-dropdown')) {
+                dropdownTrigger.classList.remove('active');
+                dropdownMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html> 

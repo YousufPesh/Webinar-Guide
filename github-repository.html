@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassBuddy Guide Panel - GitHub Repository</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="guide-panel">
+
+
+            <!-- Main Dropdown under the heading -->
+            <div class="main-dropdown">
+                <div class="dropdown-trigger" onclick="toggleDropdown()">
+                    <div class="dropdown-trigger-content">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Repository</span>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="index.html" class="dropdown-item">
+                        <i class="fas fa-wrench"></i>
+                        ServiceNow Ticket
+                    </a>
+                    <a href="github-repository.html" class="dropdown-item active">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                    <a href="distribution-list.html" class="dropdown-item">
+                        <i class="fas fa-users"></i>
+                        Distribution List
+                    </a>
+                </div>
+            </div>
+
+            <!-- The Scenario Section -->
+            <div class="section">
+                <h2 class="section-title">The Scenario</h2>
+                <div class="scenario-card">
+                    <p>A student needs a new GitHub repository for their coursework or project.</p>
+                    <p>Previously, they had to contact IT, fill out a request manually, and the IT team had to log into GitHub to create the repository.</p>
+                </div>
+            </div>
+
+            <!-- How ClassBuddy Responds Section -->
+            <div class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-search"></i>
+                    How ClassBuddy Responds
+                </h2>
+                
+                <div class="steps-container">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-user"></i>
+                            <h3>Step 1 – User Submits a Request</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>A user logs into ClassBuddy and asks:</p>
+                            <div class="quote-box">
+                                <em>"I need to create a new GitHub repo for our group assignment in Data Science 402."</em>
+                            </div>
+                            <p>ClassBuddy begins collecting key project details.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Step 2 – ClassBuddy Collects Required Information</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>ClassBuddy prompts the user to provide:</p>
+                            <ul>
+                                <li>Repository name</li>
+                                <li>Course or project context</li>
+                                <li>Visibility (public/private)</li>
+                                <li>Collaborators to be added</li>
+                            </ul>
+                            <p>It also checks for any naming conventions defined by the institution or instructor.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-arrow-up"></i>
+                            <h3>Step 3 – Repository Creation</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>Once the information is confirmed, ClassBuddy connects with the university's GitHub organization and creates the repository automatically.</p>
+                            <p>It ensures:</p>
+                            <ul>
+                                <li>Proper team ownership and permissions</li>
+                                <li>Default README and .gitignore files are initialized</li>
+                                <li>Labels or branch protection rules are applied if required</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-eye"></i>
+                            <h3>Step 4 – Review & Confirm</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>ClassBuddy presents the repository details to the user:</p>
+                            <ul>
+                                <li>Repo URL</li>
+                                <li>List of collaborators with access</li>
+                                <li>Any pre-configured templates or folders</li>
+                            </ul>
+                            <p>The user can confirm or request edits before finalizing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="step-card">
+                        <div class="step-header">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Step 5 – Repository Created 🎉</h3>
+                        </div>
+                        <div class="step-content">
+                            <p>ClassBuddy confirms:</p>
+                            <div class="success-box">
+                                <strong>✅ Your GitHub repository has been successfully created!</strong><br>
+                                <strong>Repo URL: github.com/university-org/data-science-402-group5</strong><br>
+                                Collaborators have been invited. You can start pushing code anytime.
+                            </div>
+                            <p>The user is notified immediately, and the project team is ready to collaborate without needing manual setup or IT intervention.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Ecosystem Collaboration Section -->
+            <div class="section">
+                <div class="ecosystem-header">
+                    <h2 class="section-title">System Ecosystem Collaboration</h2>
+                    <p class="ecosystem-subtitle">How ClassBuddy and GitHub work together to simplify repository management</p>
+                </div>
+                
+                <div class="ecosystem-grid">
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon knowledge">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>Knowledge</strong><br>
+                            Base<br>
+                            <span style="font-size: 10px; color: #6c757d;">Institution Best Practices</span>
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon web-search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>Web Search</strong><br>
+                            Module
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon orchestrator">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>ClassBuddy</strong><br>
+                            AI Orchestrator
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon time-saved">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>Time Saved</strong><br>
+                            ~15 minutes per repo
+                        </div>
+                    </div>
+
+                    <div class="ecosystem-item">
+                        <div class="ecosystem-icon servicenow">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="ecosystem-text">
+                            <strong>GitHub</strong><br>
+                            Repository
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Previous
+                </a>
+                <a href="distribution-list.html" class="nav-btn next-btn">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Dropdown functionality
+        function toggleDropdown() {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            dropdownTrigger.classList.toggle('active');
+            dropdownMenu.classList.toggle('active');
+        }
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdownTrigger = document.querySelector('.dropdown-trigger');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            
+            if (!e.target.closest('.main-dropdown')) {
+                dropdownTrigger.classList.remove('active');
+                dropdownMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html> 
