@@ -16,17 +16,17 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 20px;
+    padding: 0;
 }
 
 .guide-panel {
-    width: 25vw;
-    max-width: 400px;
+    width: 100%;
+    max-width: 1200px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-right: 20px;
+    margin: 0 auto;
 }
 
 /* Navigation Menu */
@@ -564,8 +564,13 @@ body {
 
 @media (max-width: 768px) {
     .guide-panel {
-        width: 90vw;
+        width: 100%;
         max-width: none;
+        border-radius: 0;
+    }
+    
+    .container {
+        padding: 0;
     }
 }
 

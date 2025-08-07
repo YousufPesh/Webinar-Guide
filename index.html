@@ -71,8 +71,11 @@
                         </div>
                         <div class="step-content">
                             <p>A user logs into ClassBuddy and shares:</p>
-                            <div class="quote-box">
+                            <div class="quote-box" style="position: relative;">
                                 <em>"My Wi‑Fi connection keeps dropping randomly."</em>
+                                <button onclick="copyToClipboard('My Wi‑Fi connection keeps dropping randomly.')" style="position: absolute; bottom: 8px; right: 8px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 4px 8px; font-size: 12px; cursor: pointer; color: #6c757d;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
                             </div>
                             <p>ClassBuddy captures the concern and begins diagnosing the issue.</p>
                         </div>
@@ -98,8 +101,11 @@
                         </div>
                         <div class="step-content">
                             <p>The user chooses to escalate:</p>
-                            <div class="quote-box">
+                            <div class="quote-box" style="position: relative;">
                                 <em>"Yes, please escalate this to the help desk."</em>
+                                <button onclick="copyToClipboard('Yes, please escalate this to the help desk.')" style="position: absolute; bottom: 8px; right: 8px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px; padding: 4px 8px; font-size: 12px; cursor: pointer; color: #6c757d;">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
                             </div>
                             <p>ClassBuddy gathers required details and begins preparing a ServiceNow ticket, including:</p>
                             <ul>
@@ -241,6 +247,24 @@
                 dropdownMenu.classList.remove('active');
             }
         });
+
+        // Copy to clipboard functionality
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Optional: Show a brief success message
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i>';
+                button.style.color = '#28a745';
+                
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.style.color = '#6c757d';
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
     </script>
 </body>
 </html> 
